@@ -23,19 +23,17 @@ Autonomous Self-Correction Loop: Employs conditional edge routing gates that ins
 
 ### Project Directory Structure
 
-Plaintext
 Local_Agent_Researcher/
-│
-├── src/
-│   ├── __init__.py
-│   ├── graph.py         # Node connectivity topology and loop definitions
-│   ├── state.py         # Centralized TypedDict clipboard memory structure
-│   └── tools.py         # Deterministic technical data collection utilities
-│
-├── main.py              # Application execution entry point
-├── .gitignore           # Python run-cache isolation configuration
-└── requirements.txt     # Pinpointed version-controlled package manifest
+    src/
+        __init__.py
+        graph.py        # Node connectivity topology and loop definitions
+        state.py        # Centralized TypedDict clipboard memory structure
+        tools.py        # Deterministic technical data collection utilities
+    main.py             # Application execution entry point
+    .gitignore          # Python run-cache isolation configuration
+    requirements.txt     # Pinpointed version-controlled package manifest
 
+    
 ### Local Installation & Deployment
 Prerequisites
 Python 3.11+ installed on your host system.
