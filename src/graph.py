@@ -4,9 +4,13 @@ from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage
 from src.state import ResearcherState
 from src.tools import web_search_tool
+from src.config import settings
 
-# Initialize connection to your local Ollama daemon
-llm = ChatOllama(model="qwen2.5:0.5b", temperature=0.2)
+llm = ChatOllama(
+    base_url=settings.OLLAMA_BASE_URL, 
+    model=settings.OLLAMA_MODEL, 
+    temperature=0.2
+)
 
 def researcher_node(state: ResearcherState) -> dict:
     """Fetches documents and appends facts to the state memory ledger."""

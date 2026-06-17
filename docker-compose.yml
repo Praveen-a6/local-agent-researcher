@@ -1,0 +1,10 @@
+services:
+  agent-studio:
+    build: .
+    container_name: production-agent-studio
+    ports:
+      - "8501:8501"
+    environment:
+      # Directs the container to break out to your Windows host network where Ollama runs
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=qwen2.5:0.5b
