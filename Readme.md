@@ -23,6 +23,7 @@ Autonomous Self-Correction Loop: Employs conditional edge routing gates that ins
 
 ### Project Directory Structure
 
+Plaintext
 Local_Agent_Researcher/
 │
 ├── src/
@@ -34,7 +35,6 @@ Local_Agent_Researcher/
 ├── main.py              # Application execution entry point
 ├── .gitignore           # Python run-cache isolation configuration
 └── requirements.txt     # Pinpointed version-controlled package manifest
-
 
 ### Local Installation & Deployment
 Prerequisites
